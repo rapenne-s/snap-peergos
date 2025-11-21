@@ -54,6 +54,7 @@ parts:
       - dist
     source-type: git
     source: https://github.com/peergos/web-ui
+    source-tag: v1.16.0
     override-build: |
       craftctl default
 
