@@ -2,6 +2,8 @@
 
 This repository purpose is to package [peergos web-ui](https://github.com/peergos/web-ui) as a snap.
 
+[![Get it from the Snap Store](https://snapcraft.io/en/light/install.svg)](https://snapcraft.io/peergos)
+
 # How to install
 
 Make sure you have `snap` installed, then run: `snap install peergos`
