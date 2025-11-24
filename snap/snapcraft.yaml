@@ -54,7 +54,7 @@ parts:
       - dist
     source-type: git
     source: https://github.com/peergos/web-ui
-    source-tag: v1.16.0
+    source-tag: v$SNAPCRAFT_PROJECT_VERSION
     override-build: |
       craftctl default
 
