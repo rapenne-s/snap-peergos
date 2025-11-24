@@ -25,9 +25,11 @@ description: |
 
 contact: https://peergos.org/contact
 issues:
-  - https://github.com/Peergos/snap/issues
+  - https://github.com/rapenne-s/snap-peergos/issues
   - https://github.com/Peergos/web-ui/issues
-source-code: https://github.com/Peergos/web-ui/
+source-code:
+  - https://github.com/rapenne-s/snap-peergos
+  - https://github.com/Peergos/web-ui
 website: https://peergos.org
 
 grade: stable
