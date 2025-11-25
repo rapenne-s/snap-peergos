@@ -1,6 +1,6 @@
 name: peergos
 base: core24
-version: '1.16.0'
+adopt-info: peergos-webui
 summary: A p2p, secure file storage, social network and application protocol
 description: |
   Peergos is building the next web - the private web, where end users are
@@ -56,9 +56,13 @@ parts:
       - dist
     source-type: git
     source: https://github.com/peergos/web-ui
-    source-tag: v$SNAPCRAFT_PROJECT_VERSION
     override-build: |
       craftctl default
+
+      # define version
+      GIT_VERSION="$(git rev-parse HEAD)"
+      VERSION="$(git describe --tags $GIT_VERSION)"
+      craftctl set version="$VERSION"
 
       # workaround because ant plugin is copying all jar files found
       find "${CRAFT_PART_INSTALL}/jar" -name '*.jar' -delete
