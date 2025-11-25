@@ -24,4 +24,4 @@ By default, peergos data are stored in `$HOME/snap/peergos/current/`, this can b
 
 Because of snap sandboxing rules, peergos snap is not allowed to read dotfiles from your home directory.
 
-When using the **Sync** feature, the error `Mount point not found` appears due to the sandboxing. This is because peergos tries to list mountpoints and it is not allowed to do so. The only drawback, apart the extra error, is that peergos is not able to verify the free disk space to stop synchronizing if the filesystem is nearly full.
+When using the **Sync** feature, peergos is not allowed to scan for mountpoints and check available disk, the mechanism that stops syncing data if the free disk space is low is disabled.
