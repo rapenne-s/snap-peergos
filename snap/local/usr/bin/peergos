@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if test -z "$PEERGOS_PATH" ; then
+if ! [ "$PEERGOS_PATH" ] ; then
     export PEERGOS_PATH="${SNAP_USER_COMMON}/peergos_data"
 fi
 exec "${SNAP}/bin/java" -jar "${SNAP}/jar/Peergos.jar" "$@"

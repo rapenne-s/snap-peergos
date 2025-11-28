@@ -51,7 +51,7 @@ parts:
       - ant
       - openjdk-21-jdk
     stage-packages:
-      - default-jre-headless
+      - default-jre
     ant-build-targets:
       - dist
     source-type: git
@@ -75,7 +75,12 @@ apps:
   peergos:
     command: usr/bin/peergos
     plugs:
+      - desktop
       - home
       - removable-media
       - network
       - network-bind
+
+lint:
+  ignore:
+    - library
