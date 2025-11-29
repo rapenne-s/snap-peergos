@@ -70,6 +70,8 @@ parts:
 
 platforms:
   amd64:
+  arm64:
+  armhf:
 
 apps:
   peergos:
