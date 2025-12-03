@@ -1,5 +1,5 @@
 ---
-# peergos-version: v1.18.0-1-55edf66de2a78b
+# peergos-version: v1.18.0
 name: peergos
 base: core24
 adopt-info: peergos-webui
